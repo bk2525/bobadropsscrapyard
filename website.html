@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Boba Drops Website</title>
+        <link href = "style.css" rel = "stylesheet" type = "text/css"/>
+    </head>
+    <body>
+        <h1><center>Stephen's Site</center></h1>
+     <h2><center>Boba!</center></h2>
+     <p><center>Mmmm...</center></p>
+ 
+     <br>
+     <center><a href="https://nra.org">Click! Maybe...</a><br></center>
+     <center>
+     <img src="boba.jpg" alt="Boba" width = "500" height = "500">
+     <img src="cat.jpeg" alt="Cat" width="500" height="500" />
+     </center>
+     <center><div id="message"></div></center>
+     <center>
+     <button id="give-btn">Give boba</button>
+     </center>
+     <script>
+         document.getElementById("give-btn").onclick = () => {
+             console.log('I bought boba')
+             document.getElementById("message").innerText = 'you donated boba!'
+         }
+     </script>
+    </body>
+</html>
